@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>참 좋은 E-티켓</title>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="참 좋은 E-티켓">
+    <meta name="keywords" content="상담 한방에~ 소액결제 상품권교환!">
+
+    <!-- opengraph -->
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="참 좋은 E-티켓" />
+    <meta property="og:description" content="상담 한방에~ 소액결제 상품권교환!" />
+    <meta property="og:url" content="https://4off4.github.io/kmong2Eticket/img/ogImg.jpg"/>
+    <meta property="og:site_name" content="참 좋은 E-티켓"/>
+    <meta property="og:image" content="https://4off4.github.io/homePro/images/ogImg.jpg"/>
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:video:width" content="400" />
+    <meta property="og:video:height" content="300" />
+    <meta property="og:image:alt" content="참 좋은 E-티켓" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- script -->
+    <script>
+        $(document).ready(function() {
+            $("a#idOpenChat").click(function() {
+                $(location).attr('href', "");
+                $(location).attr("target", "_system");
+            });
+            $(document).bind("contextmenu", function(e) {
+                alert("오른쪽 마우스 금지");
+                return false;
+            });
+            $('img').bind("contextmenu", function(e) {
+                alert("그림에서 오른쪽 마우스 금지");
+                return false;
+            });
+            $('img').bind("selectstart", function(e) {
+                alert("그림에서 오른쪽 마우스 금지");
+                return false;
+            });
+        });
+        document.oncontextmenu = function() {
+                return false;
+            } // 우클릭 방지
+        setInterval(function() {
+            $(".blinkEle").toggle();
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- logo -->
+        <div class="w3-row-padding">
+            <div class="w3-under">
+                <div style="background-color: #fff">
+                    <img src="img/main.jpg" alt="">
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
